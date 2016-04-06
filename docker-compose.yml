@@ -1,0 +1,16 @@
+version: "2"
+services:
+  db:
+    image: postgres:9.5
+    environment:
+      - POSTGRES_PASSWORD=passbot
+      - POSTGRES_USER=bot
+      - POSTGRES_DB=qamusy
+    volumes:
+      - /opt/qamusy/data:/var/lib/postgresql:rw
+  ruby:
+    image: ruby:2.3-alpine
+    command: tail -f /dev/null
+    working_dir: /data
+    volumes:
+      - .:/data
