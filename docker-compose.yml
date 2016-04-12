@@ -8,9 +8,13 @@ services:
       - POSTGRES_DB=qamusy
     volumes:
       - /opt/qamusy/data:/var/lib/postgresql:rw
+    labels:
+      - qamusy-bot=db
   ruby:
     image: ruby:2.3-alpine
     command: tail -f /dev/null
     working_dir: /data
     volumes:
       - .:/data
+    labels:
+      - qamusy-bot=ruby
