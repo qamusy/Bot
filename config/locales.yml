@@ -1,0 +1,8 @@
+en:
+  greeting_message: "Hi! Telegram is awesome!"
+  farewell_message: "Bye! I'll miss you :("
+  multiple_choice_question: "Choose the correct answer?"
+  language_set_message: "Choose your language"
+  language_set:
+    - English
+    - العربية
