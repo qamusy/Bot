@@ -1,0 +1,8 @@
+adapter: postgresql
+database: qamusy
+host: db
+username: bot
+password: passbot
+encoding: unicode
+pool: 5
+timeout: 5000
